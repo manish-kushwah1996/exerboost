@@ -29,13 +29,13 @@ import { Link } from "react-router-dom"
 
             <ul class="nav gap-3  flex-column ">
   <li class="nav-item">
-    <a class="btn btn-info" role="button"  href="#">Dashboard</a>
+    <a class="btn btn-info" role="button"  href="/dashboard">Dashboard</a>
   </li>
   <li class="nav-item">
-    <a class="btn btn-info" role="button" href="#">Users</a>
+    <a class="btn btn-info" role="button" href="/userslist">Users</a>
   </li>
   <li class="nav-item">
-    <a class="btn btn-info" role="button" href="#">Produts</a>
+    <a class="btn btn-info" role="button" href="/productList">Produts</a>
   </li>
   <li class="nav-item">
     <a class="btn btn-info" role="button"  href="#" >Orders</a>

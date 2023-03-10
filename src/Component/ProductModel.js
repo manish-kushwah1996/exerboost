@@ -1,81 +1,3 @@
-// import {Link} from 'react-router-dom'
-// function Registration(){
-//    {
-//       const []
-//    }
-//     return(
-//         <div>
-//          <div class="wrapper">
-//     <div>
-//      <h1>Registration Form</h1> 
-//     </div>
-//     <div class="form">
-//        <div class="inputfield">
-//           <label>First Name</label>
-//           <input type="text" class="input"/>
-//        </div>  
-//         <div class="inputfield">
-//           <label>Last Name</label>
-//           <input type="text" class="input"/>
-//        </div>  
-//        <div class="inputfield">
-//           <label>Password</label>
-//           <input type="password" class="input"/>
-//        </div>  
-//       <div class="inputfield">
-//           <label>Confirm Password</label>
-//           <input type="password" class="input"/>
-//        </div> 
-//         <div class="inputfield">
-//           <label>Gender</label>
-//           <div class="custom_select">
-//             <select>
-//               <option value="">Select</option>
-//               <option value="male">Male</option>
-//               <option value="female">Female</option>
-//             </select>
-//           </div>
-//        </div> 
-//         <div class="inputfield">
-//           <label>Email Address</label>
-//           <input type="text" class="input"/>
-//        </div> 
-//       <div class="inputfield">
-//           <label>Phone Number</label>
-//           <input type="text" class="input"/>
-//        </div> 
-//       <div class="inputfield"/>
-//           <label>Address</label>
-//           <textarea class="textarea"></textarea>
-//        </div> 
-//       <div class="inputfield">
-//           <label>Postal Code</label>
-//           <input type="text" class="input"/>
-//        </div> 
-//       <div class="inputfield terms">
-//           <label class="check">
-//             <input type="checkbox"/>
-//             <span class="checkmark"></span>
-//           </label>
-//           <p>Agreed to terms and conditions</p>
-//        </div> 
-//       <div class="inputfield">
-//         <input type="submit" value="Register" class="btn"/>
-//       </div>
-//     </div>
-// </div>	
-	
-
-
-    
-//      )
-//      }
-//      export default Registration;
-
-
-
-
-//=============================================================
 import React, { useState } from "react";
 // import Footer from "./Footer";
 // import Navbar from "./Navbar";
@@ -107,7 +29,7 @@ function Signup() {
   const postData = async (e) => {
     e.preventDefault();
 
-    const { email, firstname,lastname, password, confirm_password, phone_number, city } =
+    const { email, username, password, confirm_password, phone_number, city } =
       user;
 
     const res = await fetch(
@@ -119,8 +41,7 @@ function Signup() {
         },
         body: JSON.stringify({
           email,
-          firstname,
-          lastname,
+          username,
           password,
           confirm_password,
           phone_number,
@@ -227,7 +148,7 @@ function Signup() {
                       <div class="form-outline mb-4">
                         <input
                           onChange={handleInputs}
-                          value={user.firstname}
+                          value={user.username}
                           type="text"
                           name="firstname"
                           id="registerUsername"
@@ -359,7 +280,3 @@ function Signup() {
 }
 
 export default Signup;
-
-
-
-

@@ -1,6 +1,6 @@
 // import { useEffect, useState } from "react"
 // import { Table } from 'react-bootstrap'
-// function Dashboard() {
+// function Users() {
 //     const [data, setData] = useState([])
 
 //     useEffect(() => {
@@ -16,10 +16,12 @@
 //                 "Content-Type": "application/json"
 //             },
 //             body: JSON.stringify({
-//                 users,
-//                 products,
-//                 earning,
-//                 daily_order,
+//                 email,
+//                 username,
+//                 password,
+//                 confirm_password,
+//                 phone_number,
+//                 city,
 //             })
 //         });
 
@@ -35,19 +37,23 @@
 //             <Table>
 //                 <tbody>
 //                     <tr>
-//                         <th>Users</th>
-//                         <th>Produts</th>
-
-//                         <th>earning</th>
-//                         <th>daily order</th>
+//                       <th>email</th>  
+//                        <th>firstname</th> 
+//                        <th>lastname</th> 
+//                        <th>email</th> 
+                       
+//                        <th>phone</th> 
+                       
 //                     </tr>
 //                     {
 //                         data.map((item, i) => {
 //                             <tr key={i} >
-//                                 <td>{item.users}</td>
-//                                 <td>{item.produts}</td>
-//                                 <td>{item.earning}</td>
-//                                 <td>{item.daily_order}</td>
+//                                 <td>{item.email}</td>
+//                                 <td>{item.firstname}</td>
+//                                 <td>{item.lastname}</td>
+//                                 <td>{item.password}</td>
+//                                 <td>{item.conform_password}</td>
+//                                 <td>{item.phone}</td>
 //                             </tr>
 //                         })
 //                     }
@@ -58,4 +64,4 @@
 //         </div>
 //     )
 // }
-// export default Dashboard;
+// export default Users;
